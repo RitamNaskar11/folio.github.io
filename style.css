@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Nata+Sans:wght@100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: gray;
+    position: fixed;
+    font-family: "Orbitron", sans-serif;
+    height: 100vh;
+
+    transition: transform 0.5s ease-in;
+}
+
+
+.sidebar nav {
+    padding: 45px;
+
+
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+    font-weight: bold;
+
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.main {
+    /* background-color: yellow; */
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.container {
+    display: flex;
+
+
+}
+
+.developerInfo {
+
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4%;
+}
+
+.hello {
+    font-size: 55px;
+    font-family: "Google Sans Code", monospace;
+
+}
+
+.name {
+    font-size: 50px;
+    font-family: "Google Sans Code", monospace;
+    font-weight: bold;
+}
+
+.about {
+    font-size: 45px;
+    font-family: "Google Sans Code", monospace;
+
+}
+
+.devImg img {
+    height: 58vh;
+
+
+}
+
+.buttons button {
+    padding: 15px 14px;
+    border-radius: 25px;
+ 
+    font-size: 19px;
+    font-weight: bold;
+    background-color: rgb(176, 176, 237);
+    color: white;
+    cursor: pointer;
+    /* border-color: white; */
+    margin-top: 20px;
+    border: none;
+}
+
+.buttons button:hover {
+    background-color: rgb(211, 163, 255);
+    color: black;
+
+}
+
+/* 
+.contactForm h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.contactForm {
+    display: flex;
+
+
+    padding: 50px;
+    font-size: 20px;
+    font-family: "Google Sans Code", monospace;
+    margin: 220px;
+    margin-top: 20px;
+}
+
+.contactForm div {
+    margin: 10px 0;
+}
+
+.contactForm .form-text {
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+.contactForm input {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    height: 25px;
+    border-radius: 10px;
+
+}
+
+.form-check {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.form-check input {
+    width: 15px;
+    margin: 3px 0;
+
+}
+
+.form-check label {
+
+    margin: 3px;
+
+}
+
+#message {
+    width: 50vh;
+    border-radius: 5px;
+}
+
+.aboutMe {
+    margin: 220px;
+    margin-top: 20px;
+
+
+}
+
+.aboutMe h2 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: "Varela Round", sans-serif;
+
+}
+
+.aboutMe p {
+    margin-top: 20px;
+    font-size: 20px;
+
+    font-family: "Google Sans Code", monospace;
+
+}
+
+.skills-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 50px;
+}
+
+.skill-card {
+    background: rgb(231, 220, 220);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    margin-top: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill-card h3 {
+    font-family: "Google Sans Code", monospace;
+}
+
+.skill-card p {
+    font-family: "Varela Round", sans-serif;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card i {
+    font-size: 50px;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: fixed;
+}
+
+.hamburger {
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+}
+
+.hamburger .fa-cross {
+    margin-left: 160px;
+}
+
+.devProject {
+    margin: 0px;
+    padding: 56px;
+
+    font-family: "Varela Round", sans-serif;
+}
+
+.devProject h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    background-color: #e6dada;
+    padding: 60px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(178, 111, 255, 0.852);
+    transition: transform 0.3s ease;
+}
+
+
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+}
+
+
+
+
+
+@media (max-width:768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    /* .devImg {
+        display: none;
+    } */
+
+    .sidebarGo {
+        transform: translate(-100%, 0);
+        position: absolute;
+    }
+
+    .main {
+        width: 100vw;
+    }
+
+    .developerInfo {
+        flex-direction: column;
+        align-items: center;
+        /* text-align: center; */
+        /* width: 100%; */
+        margin: 120px auto 60px;
+    }
+
+    .info {
+        padding: 0 10px;
+    }
+
+    .hello {
+        font-size: 50px;
+    }
+
+    .name {
+        font-size: 45px;
+    }
+
+    .about {
+        font-size: 30px;
+    }
+
+    .buttons button {
+        font-size: 16px;
+        margin: 10px 5px;
+        padding: 8px 12px;
+    }
+
+    .devImg img {
+        height: auto;
+        width: 80%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    .aboutMe,
+    .contactForm {
+        margin: 20px;
+        padding: 20px;
+
+    }
+
+    .aboutMe .my {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .card {
+        margin-bottom: 2px;
+    }
+}
