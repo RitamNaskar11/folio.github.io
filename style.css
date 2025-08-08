@@ -361,7 +361,7 @@ body.fade-in {
 .footer {
     padding: 50px;
     margin-top: 70px;
-    background-color: #130129;
+    background-color: #06031d;
     color: white;
     font-size: 20px;
     display: flex;
@@ -417,7 +417,7 @@ body.fade-in {
     }
 
     .sidebar nav li a:hover::after {
-        width: 200%;
+        width: 100%;
     }
 
     .main {
