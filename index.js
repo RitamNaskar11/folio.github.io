@@ -21,4 +21,25 @@ document.addEventListener("DOMContentLoaded", () => {
             crossIcon.style.display = "inline";
         }
     });
+// opacity section
+      window.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("fade-in");
+    });
+
+    // Fade out before navigating to another page
+    document.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function (e) {
+            const href = this.getAttribute("href");
+
+            // Skip for external links or # anchors
+            if (href && !href.startsWith("http") && !href.startsWith("#")) {
+                e.preventDefault();
+                document.body.classList.remove("fade-in");
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 500); // matches CSS transition time
+            }
+        });
+    });
+    // end opacity section
 });
