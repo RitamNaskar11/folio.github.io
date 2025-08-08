@@ -316,11 +316,19 @@ body.fade-in {
 
 .contactForm input,
 .contactForm textarea {
-    width: 95%;
-    padding: 10px;
-    margin: 10px 0;
+      width: 90%;
+    padding: 12px;
+    margin: 6px 0px;
     border: 1px solid #ccc;
     border-radius: 8px;
+}
+.contactForm .textarea{
+    padding: 40px;
+    width: 395px;
+      vertical-align: top;
+    line-height: 1.4;
+    padding-top: 10px;
+    
 }
 
 .form-check input {
@@ -513,6 +521,14 @@ body.fade-in {
         width: 100%;
         /* full width on mobile */
     }
+    .contactForm .textarea{
+    padding: 40px;
+    width: 311px;
+      vertical-align: top;
+    line-height: 1.4;
+    padding-top: 10px;
+    
+}
 
     .footer {
         padding: 29px 13px;
